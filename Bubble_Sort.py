@@ -7,11 +7,7 @@ def bubble_sort(nums):      # O(n^2)
                 nums[j], nums[j+1] = nums[j+1], nums[j]
 
 
-nums = [random.randint(0, 10000) for i in range(1000)]
-print(nums)
 
-bubble_sort(nums)
-print(nums)
 
 ##### Optimization
 def bubble_sort(nums):
@@ -21,5 +17,11 @@ def bubble_sort(nums):
             if nums[j] > nums[j+1]:
                 nums[j], nums[j+1] = nums[j+1], nums[j]
                 exchange = True    # if it is still false, end the loop
-            if not exchange:
-                return
+        if not exchange:
+            return nums
+
+nums = [random.randint(0, 10000) for i in range(1000)]
+print(nums)
+
+bubble_sort(nums)
+print(nums)

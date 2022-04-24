@@ -2,7 +2,7 @@ def select_sort_simple(nums):   # O(n^2) not O(n) or O(n^3)
     nums_new = []         # require more space
     for i in range(len(nums)):  # O(n)
         min_val = min(nums)       # O(n)
-        nums_new.append((min_val))
+        nums_new.append(min_val)
         nums.remove(min_val)    # O(n)
     return nums_new
 

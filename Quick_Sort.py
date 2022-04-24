@@ -17,6 +17,7 @@ def quick_sort(nums, left, right):    # O(nlogn)    logn layers
         quick_sort(nums, mid + 1, right)
 
 
+
 nums = [5,7,4,6,3,1,2,9,8]
 print(nums)
 quick_sort(nums, 0, len(nums) - 1)
